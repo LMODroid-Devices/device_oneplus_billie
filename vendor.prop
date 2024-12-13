@@ -87,6 +87,7 @@ vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 ro.camera.notify_nfc=1
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,us.zoom.videomeetings
 
 # Crypto
 keyguard.no_require_sim=true
@@ -147,7 +148,6 @@ ro.incremental.enable=1
 
 # Media
 debug.stagefright.omx_default_rank=0
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 debug.stagefright.ccodec=4
 
 # Netflix

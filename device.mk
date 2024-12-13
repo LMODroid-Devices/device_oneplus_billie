@@ -41,12 +41,11 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     SystemUIResCommon \
     TelephonyResCommon \
-    WifiResCommon \
-    WifiResTarget \
     OnePlusN10Frameworks \
     OnePlusN10Settings \
     OnePlusN10SettingsProvider \
-    OnePlusN10SystemUI
+    OnePlusN10SystemUI \
+    OnePlusN10WifiOverlay
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
@@ -516,39 +515,29 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    dump_sniffer.sh \
-    ftm_power_config.sh \
     init.class_main.sh \
+    init.oem.sh \
     init.qti.dcvs.sh \
     init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
-    init.qti.chg_policy.sh \
-    launch_sniffer.sh \
-    qca6234-service.sh \
-    startcontention.sh \
-    terminate_sniffer.sh
+    init.qti.chg_policy.sh
 
 PRODUCT_PACKAGES += \
     init.oem.debug.rc \
     init.oem.rc \
-    init.oem_ftm.rc \
-    init.oem_rf.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
-    init.uicc.rc \
     init.usb.configfs.rc \
-    vendor.oem_ftm.rc \
-    vendor.oem_ftm_svc_disable.rc \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom.ramdisk \
     fstab.zram
 
 # Seccomp
